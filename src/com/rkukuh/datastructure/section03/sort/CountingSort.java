@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section03.sort;
 
-public class CountingSort
+class CountingSort
 {
     public static void main(String[] args)
     {
@@ -9,10 +9,12 @@ public class CountingSort
         countingSort(numbers, 1, 10);
 
         for (int number : numbers) {
+
             System.out.println(number);
         }
     }
 
+    @SuppressWarnings("SameParameterValue")
     private static void countingSort(int[] input, int min, int max)
     {
         int[] countArray = new int[(max - min) + 1];
