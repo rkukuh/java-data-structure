@@ -8,18 +8,18 @@ public class CountingSort
 
         countingSort(numbers, 1, 10);
 
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
+        for (int number : numbers) {
+            System.out.println(number);
         }
     }
 
-    public static void countingSort(int[] input, int min, int max)
+    private static void countingSort(int[] input, int min, int max)
     {
         int[] countArray = new int[(max - min) + 1];
 
-        for (int i = 0; i < input.length; i++) {
+        for (int anInput : input) {
 
-            countArray[input[i] - min]++;
+            countArray[anInput - min]++;
         }
 
         int j = 0;
@@ -29,6 +29,7 @@ public class CountingSort
             while (countArray[i - min] > 0) {
 
                 input[j++] = i;
+
                 countArray[i - min]--;
             }
         }
