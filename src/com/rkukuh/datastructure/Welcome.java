@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure;
 
-public class Main {
+public class Welcome {
 
     public static void main(String[] args) {
 
