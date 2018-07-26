@@ -21,8 +21,8 @@ public class BigOValue
             if (numbers[i] == 7) {
 
                 index = i;
-                break;
 
+                break;
             }
         }
 

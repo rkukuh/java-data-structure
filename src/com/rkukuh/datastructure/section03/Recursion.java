@@ -16,13 +16,13 @@ public class Recursion
     {
         System.out.println(iterativeFactorial(3));
         System.out.println(recursiveFactorial(3));
-
     }
 
 
     public static int recursiveFactorial(int num)
     {
         if (num == 0) {
+
             return 1;
         }
 
@@ -32,6 +32,7 @@ public class Recursion
     public static int iterativeFactorial(int num)
     {
         if (num == 0) {
+
             return 1;
         }
 
@@ -40,7 +41,6 @@ public class Recursion
         for (int i = 1; i <= num; i++) {
 
             factorial *= i;
-
         }
 
         return factorial;
