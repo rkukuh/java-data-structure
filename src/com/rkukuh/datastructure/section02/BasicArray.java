@@ -14,9 +14,9 @@ public class BasicArray
         numbers[5] = 1;
         numbers[6] = -22;
 
-        for (int i = 0; i < numbers.length; i++) {
+        for (int number : numbers) {
 
-            System.out.println(numbers[i]);
+            System.out.println(number);
         }
     }
 }
