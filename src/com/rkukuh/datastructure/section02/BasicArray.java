@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section02.array;
+package com.rkukuh.datastructure.section02;
 
 public class BasicArray {
 
