@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section02;
 
-public class BigOValue
+class BigOValue
 {
     public static void main(String[] args)
     {
@@ -21,7 +21,6 @@ public class BigOValue
             if (numbers[i] == 7) {
 
                 index = i;
-
                 break;
             }
         }

@@ -1,33 +1,33 @@
 package com.rkukuh.datastructure.section03.sort;
 
-public class ShellSort
+class ShellSort
 {
     public static void main(String[] args)
     {
-        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+        int[] numbers = { 20, 35, -15, 7, 55, 1, -22 };
 
-        for (int gap = intArray.length / 2; gap > 0; gap /= 2) {
+        for (int gap = numbers.length / 2; gap > 0; gap /= 2) {
 
-            for (int i = gap; i < intArray.length; i++) {
+            for (int i = gap; i < numbers.length; i++) {
 
-                int newElement = intArray[i];
+                int newElement = numbers[i];
 
                 int j = i;
 
-                while (j >= gap && intArray[j - gap] > newElement) {
+                while (j >= gap && numbers[j - gap] > newElement) {
 
-                    intArray[j] = intArray[j - gap];
+                    numbers[j] = numbers[j - gap];
 
                     j -= gap;
                 }
 
-                intArray[j] = newElement;
+                numbers[j] = newElement;
             }
         }
 
-        for (int i = 0; i < intArray.length; i++) {
+        for (int number : numbers) {
 
-            System.out.println(intArray[i]);
+            System.out.println(number);
         }
     }
 }

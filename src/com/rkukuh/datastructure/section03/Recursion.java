@@ -10,7 +10,7 @@ package com.rkukuh.datastructure.section03;
  *
  */
 
-public class Recursion
+class Recursion
 {
     public static void main(String[] args)
     {
@@ -18,8 +18,7 @@ public class Recursion
         System.out.println(recursiveFactorial(3));
     }
 
-
-    public static int recursiveFactorial(int num)
+    private static int recursiveFactorial(int num)
     {
         if (num == 0) {
 
@@ -29,7 +28,7 @@ public class Recursion
         return num * recursiveFactorial(num - 1);
     }
 
-    public static int iterativeFactorial(int num)
+    private static int iterativeFactorial(int num)
     {
         if (num == 0) {
 

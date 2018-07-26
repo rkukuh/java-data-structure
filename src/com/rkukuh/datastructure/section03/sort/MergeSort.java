@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section03.sort;
 
-public class MergeSort
+class MergeSort
 {
     public static void main(String[] args)
     {

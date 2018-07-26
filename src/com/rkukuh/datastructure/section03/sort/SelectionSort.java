@@ -1,34 +1,34 @@
 package com.rkukuh.datastructure.section03.sort;
 
-public class SelectionSort
+class SelectionSort
 {
     public static void main(String[] args)
     {
-        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+        int[] numbers = { 20, 35, -15, 7, 55, 1, -22 };
 
-        for (int lastUnsortedIndex = intArray.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
+        for (int lastUnsortedIndex = numbers.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
 
             int largest = 0;
 
             for (int i = 1; i <= lastUnsortedIndex; i++) {
 
-                if (intArray[i] > intArray[largest]) {
+                if (numbers[i] > numbers[largest]) {
 
                     largest = i;
                 }
             }
 
-            swap(intArray, largest, lastUnsortedIndex);
+            swap(numbers, largest, lastUnsortedIndex);
         }
 
 
-        for (int i = 0; i < intArray.length; i++) {
+        for (int number : numbers) {
 
-            System.out.println(intArray[i]);
+            System.out.println(number);
         }
     }
 
-    public static void swap(int[] array, int i, int j)
+    private static void swap(int[] array, int i, int j)
     {
         if (i == j) {
 

@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section02;
 
-public class BasicArray
+class BasicArray
 {
     public static void main(String[] args)
     {

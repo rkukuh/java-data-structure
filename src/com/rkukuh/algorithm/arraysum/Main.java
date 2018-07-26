@@ -2,7 +2,7 @@ package com.rkukuh.algorithm.arraysum;
 
 import java.util.Scanner;
 
-public class Main
+class Main
 {
     public static void main(String[] args)
     {
@@ -14,9 +14,9 @@ public class Main
 
         int sum = 0;
 
-        for (int i = 0; i < numbers.length; i++) {
+        for (String number : numbers) {
 
-            sum += Integer.parseInt(numbers[i]);
+            sum += Integer.parseInt(number);
         }
 
         System.out.println(sum);

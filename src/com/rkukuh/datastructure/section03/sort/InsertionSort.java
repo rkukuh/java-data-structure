@@ -1,28 +1,28 @@
 package com.rkukuh.datastructure.section03.sort;
 
-public class InsertionSort
+class InsertionSort
 {
     public static void main(String[] args)
     {
-        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+        int[] numbers = { 20, 35, -15, 7, 55, 1, -22 };
 
-        for (int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length; firstUnsortedIndex++) {
+        for (int firstUnsortedIndex = 1; firstUnsortedIndex < numbers.length; firstUnsortedIndex++) {
 
-            int newElement = intArray[firstUnsortedIndex];
+            int newElement = numbers[firstUnsortedIndex];
 
             int i;
 
-            for (i = firstUnsortedIndex; i > 0 && intArray[i - 1] > newElement; i--) {
+            for (i = firstUnsortedIndex; i > 0 && numbers[i - 1] > newElement; i--) {
 
-                intArray[i] = intArray[i - 1];
+                numbers[i] = numbers[i - 1];
             }
 
-            intArray[i] = newElement;
+            numbers[i] = newElement;
         }
 
-        for (int i = 0; i < intArray.length; i++) {
+        for (int number : numbers) {
 
-            System.out.println(intArray[i]);
+            System.out.println(number);
         }
     }
 }
