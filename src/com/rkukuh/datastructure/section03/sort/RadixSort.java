@@ -8,13 +8,13 @@ public class RadixSort
 
         radixSort(numbers, 10, 4);
 
-        for (int i = 0; i < numbers.length; i++) {
+        for (int number : numbers) {
 
-            System.out.println(numbers[i]);
+            System.out.println(number);
         }
     }
 
-    public static void radixSort(int[] input, int radix, int width)
+    private static void radixSort(int[] input, int radix, int width)
     {
         for (int i = 0; i < width; i++) {
 
@@ -22,7 +22,7 @@ public class RadixSort
         }
     }
 
-    public static void radixSingleSort(int[] input, int position, int radix)
+    private static void radixSingleSort(int[] input, int position, int radix)
     {
         int numItems = input.length;
         int[] countArray = new int[radix];
@@ -45,13 +45,10 @@ public class RadixSort
             temp[--countArray[getDigit(position, input[tempIndex], radix)]] = input[tempIndex];
         }
 
-        for (int tempIndex = 0; tempIndex < numItems; tempIndex++) {
-
-            input[tempIndex] = temp[tempIndex];
-        }
+        System.arraycopy(temp, 0, input, 0, numItems);
     }
 
-    public static int getDigit(int position, int value, int radix)
+    private static int getDigit(int position, int value, int radix)
     {
         return value / (int) Math.pow(radix, position) % radix;
     }
