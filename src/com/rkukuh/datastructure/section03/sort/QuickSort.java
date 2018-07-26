@@ -8,13 +8,13 @@ public class QuickSort
 
         quickSort(numbers, 0, numbers.length);
 
-        for (int i = 0; i < numbers.length; i++) {
+        for (int number : numbers) {
 
-            System.out.println(numbers[i]);
+            System.out.println(number);
         }
     }
 
-    public static void quickSort(int[] input, int start, int end)
+    private static void quickSort(int[] input, int start, int end)
     {
         if (end - start < 2) {
 
@@ -25,15 +25,16 @@ public class QuickSort
 
         quickSort(input, start, pivotIndex);
 
-        for (int i = 0; i < input.length; i++) {
-
-            System.out.println(input[i]);
+        // DEBUG
+        /*for (int anInput : input) {
+            System.out.println(anInput);
         }
+        System.out.println();*/
 
         quickSort(input, pivotIndex + 1, end);
     }
 
-    public static int partition(int[] input, int start, int end)
+    private static int partition(int[] input, int start, int end)
     {
         // This is using the first element as the pivot
         int pivot = input[start];
@@ -42,7 +43,7 @@ public class QuickSort
 
         while (i < j) {
 
-            // NOTE: empty loop body
+            //noinspection StatementWithEmptyBody
             while (i < j && input[--j] >= pivot);
 
             if (i < j) {
@@ -50,7 +51,7 @@ public class QuickSort
                 input[i] = input[j];
             }
 
-            // NOTE: empty loop body
+            //noinspection StatementWithEmptyBody
             while (i < j && input[++i] <= pivot);
 
             if (i < j) {
