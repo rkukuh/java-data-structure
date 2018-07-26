@@ -4,18 +4,17 @@ public class MergeSort
 {
     public static void main(String[] args)
     {
-        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+        int[] numbers = { 20, 35, -15, 7, 55, 1, -22 };
 
-        mergeSort(intArray, 0, intArray.length);
+        mergeSort(numbers, 0, numbers.length);
 
-        for (int i = 0; i < intArray.length; i++) {
+        for (int number : numbers) {
 
-            System.out.println(intArray[i]);
+            System.out.println(number);
         }
     }
 
-    // { 20, 35, -15, 7, 55, 1, -22 }
-    public static void mergeSort(int[] input, int start, int end)
+    private static void mergeSort(int[] input, int start, int end)
     {
         if (end - start < 2) {
 
@@ -30,8 +29,7 @@ public class MergeSort
         merge(input, start, mid, end);
     }
 
-    // { 20, 35, -15, 7, 55, 1, -22 }
-    public static void merge(int[] input, int start, int mid, int end)
+    private static void merge(int[] input, int start, int mid, int end)
     {
         if (input[mid - 1] <= input[mid]) {
 
