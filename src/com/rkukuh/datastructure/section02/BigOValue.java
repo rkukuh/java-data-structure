@@ -1,9 +1,9 @@
 package com.rkukuh.datastructure.section02;
 
-public class BigOValue {
-
-    public static void main(String[] args) {
-
+public class BigOValue
+{
+    public static void main(String[] args)
+    {
         int[] numbers = new int[7];
 
         numbers[0] = 20;
@@ -27,7 +27,5 @@ public class BigOValue {
         }
 
         System.out.println("index = " + index);
-
-
     }
 }

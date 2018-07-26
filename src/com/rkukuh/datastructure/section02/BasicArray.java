@@ -1,7 +1,7 @@
 package com.rkukuh.datastructure.section02;
 
-public class BasicArray {
-
+public class BasicArray
+{
     public static void main(String[] args)
     {
         int[] numbers = new int[7];
