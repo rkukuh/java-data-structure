@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section04;
+package com.rkukuh.datastructure;
 
 public class Employee
 {
