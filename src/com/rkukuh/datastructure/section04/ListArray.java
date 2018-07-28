@@ -3,7 +3,7 @@ package com.rkukuh.datastructure.section04;
 import java.util.List;
 import java.util.ArrayList;
 
-public class ListArray
+class ListArray
 {
     public static void main(String[] args)
     {
