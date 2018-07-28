@@ -13,11 +13,14 @@ public class Test
 
         EmployeeDoubleLinkedList employees = new EmployeeDoubleLinkedList();
 
+        System.out.println("isEmpty(): " + employees.isEmpty());
+
         employees.addToFront(ironMan);
         employees.addToFront(captAmerica);
         employees.addToFront(blackPanther);
         employees.addToFront(thorThunder);
 
+        System.out.println();
         employees.printList();
         System.out.println("Size: " + employees.getSize());
 
