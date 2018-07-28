@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section03.sort;
 
-class SelectionSort
+public class SelectionSort
 {
     public static void main(String[] args)
     {
@@ -30,10 +30,7 @@ class SelectionSort
 
     private static void swap(int[] array, int i, int j)
     {
-        if (i == j) {
-
-            return;
-        }
+        if (i == j) return;
 
         int temp = array[i];
 

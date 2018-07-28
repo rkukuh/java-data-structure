@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section03.sort;
 
-class ShellSort
+public class ShellSort
 {
     public static void main(String[] args)
     {

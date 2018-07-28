@@ -32,7 +32,6 @@ public class RadixSort
             countArray[getDigit(position, value, radix)]++;
         }
 
-        // Adjust the count array
         for (int j = 1; j < radix; j++) {
 
             countArray[j] += countArray[j - 1];

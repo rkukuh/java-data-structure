@@ -20,20 +20,14 @@ class Recursion
 
     private static int recursiveFactorial(int num)
     {
-        if (num == 0) {
-
-            return 1;
-        }
+        if (num == 0) return 1;
 
         return num * recursiveFactorial(num - 1);
     }
 
     private static int iterativeFactorial(int num)
     {
-        if (num == 0) {
-
-            return 1;
-        }
+        if (num == 0) return 1;
 
         int factorial = 1;
 

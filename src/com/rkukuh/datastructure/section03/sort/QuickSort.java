@@ -16,27 +16,17 @@ public class QuickSort
 
     private static void quickSort(int[] input, int start, int end)
     {
-        if (end - start < 2) {
-
-            return;
-        }
+        if (end - start < 2) return;
 
         int pivotIndex = partition(input, start, end);
 
         quickSort(input, start, pivotIndex);
-
-        // DEBUG
-        /*for (int anInput : input) {
-            System.out.println(anInput);
-        }
-        System.out.println();*/
 
         quickSort(input, pivotIndex + 1, end);
     }
 
     private static int partition(int[] input, int start, int end)
     {
-        // This is using the first element as the pivot
         int pivot = input[start];
         int i = start;
         int j = end;

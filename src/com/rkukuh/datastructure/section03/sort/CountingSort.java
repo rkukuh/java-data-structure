@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section03.sort;
 
-class CountingSort
+public class CountingSort
 {
     public static void main(String[] args)
     {

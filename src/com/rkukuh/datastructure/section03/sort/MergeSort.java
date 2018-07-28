@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section03.sort;
 
-class MergeSort
+public class MergeSort
 {
     public static void main(String[] args)
     {
@@ -16,10 +16,7 @@ class MergeSort
 
     private static void mergeSort(int[] input, int start, int end)
     {
-        if (end - start < 2) {
-
-            return;
-        }
+        if (end - start < 2) return;
 
         int mid = (start + end) / 2;
 
@@ -31,10 +28,7 @@ class MergeSort
 
     private static void merge(int[] input, int start, int mid, int end)
     {
-        if (input[mid - 1] <= input[mid]) {
-
-            return;
-        }
+        if (input[mid - 1] <= input[mid]) return;
 
         int i = start;
         int j = mid;

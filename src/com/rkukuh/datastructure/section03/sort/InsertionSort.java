@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section03.sort;
 
-class InsertionSort
+public class InsertionSort
 {
     public static void main(String[] args)
     {

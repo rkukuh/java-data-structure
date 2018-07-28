@@ -1,6 +1,6 @@
 package com.rkukuh.datastructure.section03.sort;
 
-class BubbleSort
+public class BubbleSort
 {
     public static void main(String[] args)
     {
@@ -25,10 +25,7 @@ class BubbleSort
 
     private static void swap(int[] array, int i, int j)
     {
-        if (i == j) {
-
-            return;
-        }
+        if (i == j) return;
 
         int temp = array[i];
 
