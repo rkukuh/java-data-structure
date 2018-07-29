@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section03;
+package com.rkukuh.datastructure;
 
 /**
  *
