@@ -5,7 +5,7 @@ import com.rkukuh.datastructure.Employee;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class LinkedListJdk
+class LinkedListJdk
 {
     public static void main(String[] args)
     {
