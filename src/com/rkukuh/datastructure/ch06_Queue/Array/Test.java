@@ -22,8 +22,9 @@ class Test
         employees.printQueue();
         System.out.println("Size: " + employees.size());
 
-        employees.remove();
-        employees.remove();
+        System.out.println();
+        System.out.println("Removed: " + employees.remove());
+        System.out.println("Removed: " + employees.remove());
 
         System.out.println();
         employees.printQueue();
@@ -31,8 +32,9 @@ class Test
         System.out.println();
         System.out.println("Peek: " + employees.peek());
 
-        employees.remove();
-        employees.remove();
+        System.out.println();
+        System.out.println("Removed: " + employees.remove());
+        System.out.println("Removed: " + employees.remove());
         // employees.remove(); // throws NoSuchElementException
 
         employees.add(lokiBrother);

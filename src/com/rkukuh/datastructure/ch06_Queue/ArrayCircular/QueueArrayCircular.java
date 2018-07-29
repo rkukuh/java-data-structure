@@ -3,7 +3,7 @@ package com.rkukuh.datastructure.ch06_Queue.ArrayCircular;
 import java.util.NoSuchElementException;
 import com.rkukuh.datastructure.Employee;
 
-public class QueueArrayCircular
+class QueueArrayCircular
 {
     private int back;
     private int front;

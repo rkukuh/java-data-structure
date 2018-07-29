@@ -14,6 +14,7 @@ class Test
         employees.push(new Employee("Thor", "Thunder", 321));
 
         employees.printStack();
+        System.out.println("isEmpty: " + employees.isEmpty());
 
         System.out.println();
         System.out.println("Peek: " + employees.peek());

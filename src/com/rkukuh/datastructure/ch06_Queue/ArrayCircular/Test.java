@@ -2,7 +2,7 @@ package com.rkukuh.datastructure.ch06_Queue.ArrayCircular;
 
 import com.rkukuh.datastructure.Employee;
 
-public class Test
+class Test
 {
     public static void main(String[] args)
     {
@@ -22,9 +22,11 @@ public class Test
         employees.add(lokiBrother);
 
         employees.printQueue();
+        System.out.println("Size: " + employees.size());
 
-        employees.remove();
-        employees.remove();
+        System.out.println();
+        System.out.println("Removed: " + employees.remove());
+        System.out.println("Removed: " + employees.remove());
 
         System.out.println();
         employees.printQueue();
@@ -32,9 +34,10 @@ public class Test
         System.out.println();
         System.out.println("Peek: " + employees.peek());
 
-        employees.remove();
-        employees.remove();
-        employees.remove();
+        System.out.println();
+        System.out.println("Removed: " + employees.remove());
+        System.out.println("Removed: " + employees.remove());
+        System.out.println("Removed: " + employees.remove());
         // employees.remove(); // throws NoSuchElementException
 
         employees.add(hulkDestroyer);

@@ -5,7 +5,7 @@ import com.rkukuh.datastructure.Employee;
 
 class StackLinkedList
 {
-    private LinkedList<Employee> stack;
+    private final LinkedList<Employee> stack;
 
     public StackLinkedList()
     {

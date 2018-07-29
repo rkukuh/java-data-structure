@@ -74,9 +74,9 @@ public class Employee
     public String toString()
     {
         return "Employee{" +
-                "'" + firstName + '\'' +
-                ", '" + lastName + '\'' +
-                ", " + id +
+                "'" + this.getFirstName() + '\'' +
+                ", '" + this.getLastName() + '\'' +
+                ", " + this.getId() +
                 '}';
     }
 
