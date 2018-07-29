@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section06.Circular;
+package com.rkukuh.datastructure.ch06_Queue.ArrayCircular;
 
 import java.util.NoSuchElementException;
 import com.rkukuh.datastructure.Employee;

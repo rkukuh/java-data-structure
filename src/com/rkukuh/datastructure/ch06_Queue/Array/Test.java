@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section06.Array;
+package com.rkukuh.datastructure.ch06_Queue.Array;
 
 import com.rkukuh.datastructure.Employee;
 
@@ -38,7 +38,5 @@ class Test
 
         System.out.println();
         employees.printQueue();
-
     }
-
 }

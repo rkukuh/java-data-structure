@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section06.Array;
+package com.rkukuh.datastructure.ch06_Queue.Array;
 
 import java.util.NoSuchElementException;
 import com.rkukuh.datastructure.Employee;
@@ -68,5 +68,4 @@ class QueueArray
             System.out.println(queue[i]);
         }
     }
-
 }
