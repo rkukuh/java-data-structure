@@ -2,7 +2,7 @@ package com.rkukuh.datastructure.section04.LinkedListDouble;
 
 import com.rkukuh.datastructure.Employee;
 
-public class Test
+class Test
 {
     public static void main(String[] args)
     {
