@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section04;
+package com.rkukuh.datastructure.ch04_List;
 
 import java.util.Iterator;
 import java.util.LinkedList;

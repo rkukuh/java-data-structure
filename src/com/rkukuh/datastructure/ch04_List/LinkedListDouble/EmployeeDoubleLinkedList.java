@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section04.LinkedListDouble;
+package com.rkukuh.datastructure.ch04_List.LinkedListDouble;
 
 import com.rkukuh.datastructure.Employee;
 

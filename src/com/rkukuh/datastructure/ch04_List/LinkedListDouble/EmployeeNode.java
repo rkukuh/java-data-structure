@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section04.LinkedList;
+package com.rkukuh.datastructure.ch04_List.LinkedListDouble;
 
 import com.rkukuh.datastructure.Employee;
 
@@ -6,6 +6,7 @@ class EmployeeNode
 {
     private Employee employee;
     private EmployeeNode next;
+    private EmployeeNode previous;
 
     public EmployeeNode(Employee employee)
     {
@@ -32,9 +33,18 @@ class EmployeeNode
         this.next = next;
     }
 
+    public EmployeeNode getPrevious()
+    {
+        return previous;
+    }
+
+    public void setPrevious(EmployeeNode previous)
+    {
+        this.previous = previous;
+    }
+
     public String toString()
     {
         return employee.toString();
     }
-
 }

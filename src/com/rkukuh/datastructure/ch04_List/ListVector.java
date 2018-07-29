@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section04;
+package com.rkukuh.datastructure.ch04_List;
 
 import java.util.List;
 import java.util.Vector;
@@ -17,5 +17,4 @@ class ListVector
 
         employees.forEach(System.out::println);
     }
-
 }
