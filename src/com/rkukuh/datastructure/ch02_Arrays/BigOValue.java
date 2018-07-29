@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section02;
+package com.rkukuh.datastructure.ch02_Arrays;
 
 class BigOValue
 {
