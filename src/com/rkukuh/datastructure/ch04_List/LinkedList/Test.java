@@ -25,7 +25,9 @@ class Test
         System.out.println("Size: " + employees.getSize());
 
         System.out.println();
-        employees.removeFromFront();
+        System.out.println("Removed: " + employees.removeFromFront());
+
+        System.out.println();
         employees.printList();
         System.out.println("Size: " + employees.getSize());
     }
