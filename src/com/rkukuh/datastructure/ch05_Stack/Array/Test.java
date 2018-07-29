@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section05.Array;
+package com.rkukuh.datastructure.ch05_Stack.Array;
 
 import com.rkukuh.datastructure.Employee;
 

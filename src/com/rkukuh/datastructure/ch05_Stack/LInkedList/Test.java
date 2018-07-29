@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section05.LInkedList;
+package com.rkukuh.datastructure.ch05_Stack.LInkedList;
 
 import com.rkukuh.datastructure.Employee;
 
