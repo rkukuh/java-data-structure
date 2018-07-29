@@ -1,4 +1,4 @@
-package com.rkukuh.datastructure.section04.linked_list;
+package com.rkukuh.datastructure.section04.LinkedList;
 
 import com.rkukuh.datastructure.Employee;
 

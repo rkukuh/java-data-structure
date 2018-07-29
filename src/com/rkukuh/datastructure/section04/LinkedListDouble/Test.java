@@ -1,12 +1,12 @@
-package com.rkukuh.datastructure.section04.linked_list;
+package com.rkukuh.datastructure.section04.LinkedListDouble;
 
 import com.rkukuh.datastructure.Employee;
 
-class Test
+public class Test
 {
     public static void main(String[] args)
     {
-        EmployeeLinkedList employees = new EmployeeLinkedList();
+        EmployeeDoubleLinkedList employees = new EmployeeDoubleLinkedList();
 
         Employee ironMan        = new Employee("Iron", "Man", 123);
         Employee captAmerica    = new Employee("Captain", "America", 456);
@@ -24,9 +24,24 @@ class Test
         employees.printList();
         System.out.println("Size: " + employees.getSize());
 
+        Employee lokiBrother = new Employee("Loki", "Brother", 654);
+        employees.addToEnd(lokiBrother);
+
         System.out.println();
+        employees.printList();
+        System.out.println("Size: " + employees.getSize());
+
         employees.removeFromFront();
+
+        System.out.println();
+        employees.printList();
+        System.out.println("Size: " + employees.getSize());
+
+        employees.removeFromEnd();
+
+        System.out.println();
         employees.printList();
         System.out.println("Size: " + employees.getSize());
     }
+
 }
