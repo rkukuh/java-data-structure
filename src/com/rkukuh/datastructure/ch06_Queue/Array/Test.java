@@ -20,6 +20,7 @@ class Test
         employees.add(thorThunder);
 
         employees.printQueue();
+        System.out.println("Size: " + employees.size());
 
         employees.remove();
         employees.remove();
