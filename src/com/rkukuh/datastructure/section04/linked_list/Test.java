@@ -6,12 +6,12 @@ class Test
 {
     public static void main(String[] args)
     {
+        EmployeeLinkedList employees = new EmployeeLinkedList();
+
         Employee ironMan        = new Employee("Iron", "Man", 123);
         Employee captAmerica    = new Employee("Captain", "America", 456);
         Employee blackPanther   = new Employee("Black", "Panther", 789);
         Employee thorThunder    = new Employee("Thor", "Thunder", 321);
-
-        EmployeeLinkedList employees = new EmployeeLinkedList();
 
         System.out.println("isEmpty(): " + employees.isEmpty());
 
