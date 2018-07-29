@@ -1,8 +1,7 @@
 package com.rkukuh.datastructure.section05.LInkedList;
 
-import com.rkukuh.datastructure.Employee;
-
 import java.util.LinkedList;
+import com.rkukuh.datastructure.Employee;
 
 class StackLinkedList
 {

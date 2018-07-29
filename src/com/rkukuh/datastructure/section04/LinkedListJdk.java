@@ -1,9 +1,8 @@
 package com.rkukuh.datastructure.section04;
 
-import com.rkukuh.datastructure.Employee;
-
 import java.util.Iterator;
 import java.util.LinkedList;
+import com.rkukuh.datastructure.Employee;
 
 class LinkedListJdk
 {

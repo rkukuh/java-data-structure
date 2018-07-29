@@ -1,8 +1,7 @@
 package com.rkukuh.datastructure.section05.Array;
 
-import com.rkukuh.datastructure.Employee;
-
 import java.util.EmptyStackException;
+import com.rkukuh.datastructure.Employee;
 
 class StackArray
 {
