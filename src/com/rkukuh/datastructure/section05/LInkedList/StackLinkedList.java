@@ -3,7 +3,6 @@ package com.rkukuh.datastructure.section05.LInkedList;
 import com.rkukuh.datastructure.Employee;
 
 import java.util.LinkedList;
-import java.util.ListIterator;
 
 class StackLinkedList
 {
@@ -36,11 +35,9 @@ class StackLinkedList
 
     public void printStack()
     {
-        ListIterator<Employee> iterator = stack.listIterator();
+        for (Employee aStack : stack) {
 
-        while (iterator.hasNext()) {
-
-            System.out.println(iterator.next());
+            System.out.println(aStack);
         }
     }
 }
