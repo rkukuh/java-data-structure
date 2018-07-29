@@ -31,13 +31,15 @@ class Test
         employees.printList();
         System.out.println("Size: " + employees.getSize());
 
-        employees.removeFromFront();
+        System.out.println();
+        System.out.println("Removed: " + employees.removeFromFront());
 
         System.out.println();
         employees.printList();
         System.out.println("Size: " + employees.getSize());
 
-        employees.removeFromEnd();
+        System.out.println();
+        System.out.println("Removed: " + employees.removeFromFront());
 
         System.out.println();
         employees.printList();
