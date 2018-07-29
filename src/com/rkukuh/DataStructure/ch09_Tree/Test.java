@@ -2,8 +2,8 @@ package com.rkukuh.DataStructure.ch09_Tree;
 
 class Test
 {
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+    {
         Tree tree = new Tree();
 
         tree.insert(25);

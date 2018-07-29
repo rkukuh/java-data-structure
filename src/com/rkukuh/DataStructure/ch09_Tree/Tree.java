@@ -33,7 +33,7 @@ class Tree
 
     private TreeNode delete(TreeNode subtreeRoot, int value)
     {
-        if (subtreeRoot == null) return subtreeRoot;
+        if (subtreeRoot == null) return null;
 
         if (value < subtreeRoot.getData()) {
 
