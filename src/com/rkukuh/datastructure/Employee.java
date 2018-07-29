@@ -8,9 +8,9 @@ public class Employee
 
     public Employee(String firstName, String lastName, int id)
     {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.id = id;
+        this.setId(id);
+        this.setLastName(lastName);
+        this.setFirstName(firstName);
     }
 
     public int getId()
