@@ -25,6 +25,7 @@ class Recursion
         return num * recursiveFactorial(num - 1);
     }
 
+    @SuppressWarnings("SameParameterValue")
     private static int iterativeFactorial(int num)
     {
         if (num == 0) return 1;
