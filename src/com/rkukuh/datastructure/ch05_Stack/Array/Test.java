@@ -24,5 +24,6 @@ class Test
 
         System.out.println();
         employees.printStack();
+        System.out.println("Size: " + employees.size());
     }
 }

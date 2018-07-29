@@ -39,7 +39,7 @@ class Test
         System.out.println("Size: " + employees.getSize());
 
         System.out.println();
-        System.out.println("Removed: " + employees.removeFromFront());
+        System.out.println("Removed: " + employees.removeFromEnd());
 
         System.out.println();
         employees.printList();
