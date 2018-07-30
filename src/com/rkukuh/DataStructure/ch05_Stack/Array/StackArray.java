@@ -16,12 +16,9 @@ class StackArray
     public void push(Employee employee)
     {
         if (top == stack.length) {
-
-            // need to resize the backing array
             Employee[] newArray = new Employee[2 * stack.length];
 
             System.arraycopy(stack, 0, newArray, 0, stack.length);
-
             stack = newArray;
         }
 
@@ -33,7 +30,6 @@ class StackArray
         if (isEmpty()) throw new EmptyStackException();
 
         Employee employee = stack[--top];
-
         stack[top] = null;
 
         return employee;
@@ -59,7 +55,6 @@ class StackArray
     public void printStack()
     {
         for (int i = top - 1; i >= 0; i--) {
-
             System.out.println(stack[i]);
         }
     }

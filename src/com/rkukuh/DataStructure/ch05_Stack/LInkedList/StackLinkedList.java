@@ -35,7 +35,6 @@ class StackLinkedList
     public void printStack()
     {
         for (Employee aStack : stack) {
-
             System.out.println(aStack);
         }
     }
