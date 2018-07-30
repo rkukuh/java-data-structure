@@ -16,30 +16,22 @@ class HashtableArrayChaining
         int hashedKey = hashKey(key);
 
         if (occupied(hashedKey)) {
-
             int stopIndex = hashedKey;
 
             if (hashedKey == hashtable.length - 1) {
-
                 hashedKey = 0;
-            }
-            else {
-
+            } else {
                 hashedKey++;
             }
 
             while (occupied(hashedKey) && hashedKey != stopIndex) {
-
                 hashedKey = (hashedKey + 1) % hashtable.length;
             }
         }
 
         if (occupied(hashedKey)) {
-
             System.out.println("Sorry, there's already a record at position " + hashedKey);
-        }
-        else {
-
+        } else {
             hashtable[hashedKey] = new StoredEmployee(key, employee);
         }
     }
@@ -66,9 +58,7 @@ class HashtableArrayChaining
         hashtable = new StoredEmployee[oldHashtable.length];
 
         for (StoredEmployee anOldHashtable : oldHashtable) {
-
             if (anOldHashtable != null) {
-
                 put(anOldHashtable.key, anOldHashtable.employee);
             }
         }
@@ -85,33 +75,23 @@ class HashtableArrayChaining
     {
         int hashedKey = hashKey(key);
 
-        if (hashtable[hashedKey] != null && hashtable[hashedKey].key.equals(key)) {
-
-            return hashedKey;
-        }
+        if (hashtable[hashedKey] != null && hashtable[hashedKey].key.equals(key)) return hashedKey;
 
         int stopIndex = hashedKey;
 
         if (hashedKey == hashtable.length - 1) {
-
             hashedKey = 0;
-        }
-        else {
-
+        } else {
             hashedKey++;
         }
 
         while (hashedKey != stopIndex && hashtable[hashedKey] != null && !hashtable[hashedKey].key.equals(key)) {
-
             hashedKey = (hashedKey + 1) % hashtable.length;
         }
 
         if (hashtable[hashedKey] != null && hashtable[hashedKey].key.equals(key)) {
-
             return hashedKey;
-        }
-        else {
-
+        } else {
             return -1;
         }
     }
@@ -124,13 +104,9 @@ class HashtableArrayChaining
     public void printHashtable()
     {
         for (int i = 0; i < hashtable.length; i++) {
-
             if (hashtable[i] == null) {
-
                 System.out.println("Index " + i + ": empty");
-            }
-            else {
-
+            } else {
                 System.out.println("Index " + i + ": " +hashtable[i].employee);
             }
         }

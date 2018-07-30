@@ -14,7 +14,6 @@ class HashtableLinkedList
         hashtable = new LinkedList[10];
 
         for (int i = 0; i < hashtable.length; i++) {
-
             hashtable[i] = new LinkedList<>();
         }
     }
@@ -33,11 +32,9 @@ class HashtableLinkedList
         StoredEmployee employee;
 
         for (StoredEmployee storedEmployee : hashtable[hashedKey]) {
-
             employee = storedEmployee;
 
             if (employee.key.equals(key)) {
-
                 return employee.employee;
             }
         }
@@ -48,31 +45,22 @@ class HashtableLinkedList
     public Employee remove(String key)
     {
         int hashedKey = hashKey(key);
-
         StoredEmployee employee = null;
-
         ListIterator<StoredEmployee> iterator = hashtable[hashedKey].listIterator();
 
         int index = -1;
 
         while (iterator.hasNext()) {
-
             employee = iterator.next();
 
             index++;
 
-            if (employee.key.equals(key)) {
-
-                break;
-            }
+            if (employee.key.equals(key)) break;
         }
 
         if (employee == null) {
-
             return null;
-        }
-        else {
-
+        } else {
             hashtable[hashedKey].remove(index);
 
             return employee.employee;
@@ -88,17 +76,12 @@ class HashtableLinkedList
     public void printHashtable()
     {
         for (int i = 0; i < hashtable.length; i++) {
-
             if (hashtable[i].isEmpty()) {
-
                 System.out.println("Index " + i + ": empty");
-            }
-            else {
-
+            } else {
                 System.out.print("Index " + i + ": ");
 
                 for (StoredEmployee storedEmployee : hashtable[i]) {
-
                     System.out.print(storedEmployee.employee);
                     System.out.print(" -> ");
                 }

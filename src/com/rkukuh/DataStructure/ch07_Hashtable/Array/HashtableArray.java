@@ -16,11 +16,8 @@ class HashtableArray
         int hashedKey = hashKey(key);
 
         if (hashtable[hashedKey] != null) {
-
             System.out.println("Sorry, there's already a record at position " + hashedKey);
-        }
-        else {
-
+        } else {
             hashtable[hashedKey] = employee;
         }
     }
@@ -40,7 +37,6 @@ class HashtableArray
     public void printHashtable()
     {
         for (Employee aHashtable : hashtable) {
-
             System.out.println(aHashtable);
         }
     }
