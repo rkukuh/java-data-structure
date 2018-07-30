@@ -13,17 +13,13 @@ class EmployeeDoubleLinkedList
         EmployeeNode node = new EmployeeNode(employee);
 
         if (head == null) {
-
             tail = node;
-        }
-        else {
-
+        } else {
             head.setPrevious(node);
             node.setNext(head);
         }
 
         head = node;
-
         size++;
     }
 
@@ -32,17 +28,13 @@ class EmployeeDoubleLinkedList
         EmployeeNode node = new EmployeeNode(employee);
 
         if (tail == null) {
-
             head = node;
-        }
-        else {
-
+        } else {
             tail.setNext(node);
             node.setPrevious(tail);
         }
 
         tail = node;
-
         size++;
     }
 
@@ -53,16 +45,12 @@ class EmployeeDoubleLinkedList
         EmployeeNode removedNode = head;
 
         if (head.getNext() == null) {
-
             tail = null;
-        }
-        else {
-
+        } else {
             head.getNext().setPrevious(null);
         }
 
         head = head.getNext();
-
         size--;
 
         removedNode.setNext(null);
@@ -77,16 +65,13 @@ class EmployeeDoubleLinkedList
         EmployeeNode removedNode = tail;
 
         if (tail.getPrevious() == null) {
-
             head = null;
-        }
-        else {
+        } else {
 
             tail.getPrevious().setNext(null);
         }
 
         tail = tail.getPrevious();
-
         size--;
 
         removedNode.setPrevious(null);
@@ -109,14 +94,12 @@ class EmployeeDoubleLinkedList
         EmployeeNode current = head;
 
         System.out.print("HEAD -> ");
-
         while (current != null) {
 
             System.out.print(current);
             System.out.print(" <-> ");
             current = current.getNext();
         }
-
         System.out.println("null");
     }
 

@@ -24,7 +24,6 @@ class EmployeeLinkedList
         EmployeeNode removedNode = head;
 
         head = head.getNext();
-
         size--;
 
         removedNode.setNext(null);
@@ -47,14 +46,12 @@ class EmployeeLinkedList
         EmployeeNode current = head;
 
         System.out.print("HEAD -> ");
-
         while (current != null) {
 
             System.out.print(current);
             System.out.print(" -> ");
             current = current.getNext();
         }
-
         System.out.println("null");
     }
 }

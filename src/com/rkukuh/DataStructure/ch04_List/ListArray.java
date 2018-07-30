@@ -21,7 +21,7 @@ class ListArray
         System.out.println("Index 1: " + employees.get(1));
 
         System.out.println();
-        System.out.println("isEmpty(): " + employees.isEmpty()); // false
+        System.out.println("isEmpty(): " + employees.isEmpty());
 
         System.out.println();
         employees.set(1, new Employee("Hulk", "Destroyer", 654));
