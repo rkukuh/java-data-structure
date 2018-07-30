@@ -7,11 +7,9 @@ class Tree
     public void insert(int value)
     {
         if (root == null) {
-
             root = new TreeNode(value);
         }
         else {
-
             root.insert(value);
         }
     }
@@ -19,7 +17,6 @@ class Tree
     public TreeNode get(int value)
     {
         if (root != null) {
-
             return root.get(value);
         }
 
@@ -36,22 +33,15 @@ class Tree
         if (subtreeRoot == null) return null;
 
         if (value < subtreeRoot.getData()) {
-
             subtreeRoot.setLeftChild(delete(subtreeRoot.getLeftChild(), value));
-        }
-        else if (value > subtreeRoot.getData()) {
-
+        } else if (value > subtreeRoot.getData()) {
             subtreeRoot.setRightChild(delete(subtreeRoot.getRightChild(), value));
-        }
-        else {
-
+        } else {
             // Cases 1 and 2: node to delete has 0 or 1 child(ren)
             if (subtreeRoot.getLeftChild() == null) {
-
                 return subtreeRoot.getRightChild();
             }
             else if (subtreeRoot.getRightChild() == null) {
-
                 return subtreeRoot.getLeftChild();
             }
 
@@ -70,26 +60,14 @@ class Tree
 
     public int min()
     {
-        if (root == null) {
-
-            return Integer.MIN_VALUE;
-        }
-        else {
-
-            return root.min();
-        }
+        if (root == null) return Integer.MIN_VALUE;
+        else return root.min();
     }
 
     public int max()
     {
-        if (root == null) {
-
-            return Integer.MAX_VALUE;
-        }
-        else {
-
-            return root.max();
-        }
+        if (root == null) return Integer.MAX_VALUE;
+        else return root.max();
     }
 
     public void traverseInOrder()

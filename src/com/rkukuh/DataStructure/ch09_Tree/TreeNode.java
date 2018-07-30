@@ -16,24 +16,15 @@ class TreeNode
         if (value == data) return;
 
         if (value < data) {
-
             if (leftChild == null) {
-
                 leftChild = new TreeNode(value);
-            }
-            else {
-
+            } else {
                 leftChild.insert(value);
             }
-        }
-        else {
-
+        } else {
             if (rightChild == null) {
-
                 rightChild = new TreeNode(value);
-            }
-            else {
-
+            } else {
                 rightChild.insert(value);
             }
         }
@@ -41,22 +32,14 @@ class TreeNode
 
     public TreeNode get(int value)
     {
-        if (value == data) {
-
-            return this;
-        }
+        if (value == data) return this;
 
         if (value < data) {
-
             if (leftChild != null) {
-
                 return leftChild.get(value);
             }
-        }
-        else {
-
+        } else {
             if (rightChild != null) {
-
                 return rightChild.get(value);
             }
         }
@@ -67,38 +50,28 @@ class TreeNode
     public int min()
     {
         if (leftChild == null) {
-
             return data;
         }
         else {
-
             return leftChild.min();
         }
     }
 
     public int max()
     {
-        if (rightChild == null) {
-
-            return data;
-        }
-        else {
-
-            return rightChild.max();
-        }
+        if (rightChild == null) return data;
+        else return rightChild.max();
     }
 
     public void traverseInOrder()
     {
         if (leftChild != null) {
-
             leftChild.traverseInOrder();
         }
 
         System.out.print(data + ", ");
 
         if (rightChild != null) {
-
             rightChild.traverseInOrder();
         }
     }
