@@ -38,11 +38,8 @@ class Heap
         heap[index] = heap[size - 1];
 
         if (index == 0 || heap[index] < heap[parent]) {
-
             fixHeapBelow(index, size - 1);
-        }
-        else {
-
+        } else {
             fixHeapAbove(index);
         }
 
@@ -56,7 +53,6 @@ class Heap
         int newValue = heap[index];
 
         while (index > 0 && newValue > heap[getParent(index)]) {
-
             heap[index] = heap[getParent(index)];
             index = getParent(index);
         }
@@ -69,37 +65,27 @@ class Heap
         int childToSwap;
 
         while (index <= lastHeapIndex) {
-
             int leftChild = getChild(index, true);
             int rightChild = getChild(index, false);
 
             if (leftChild <= lastHeapIndex) {
-
                 if (rightChild > lastHeapIndex) {
-
                     childToSwap = leftChild;
-                }
-                else {
-
+                } else {
                     childToSwap = (heap[leftChild] > heap[rightChild] ? leftChild : rightChild);
                 }
 
                 if (heap[index] < heap[childToSwap]) {
-
                     int tmp = heap[index];
 
                     heap[index] = heap[childToSwap];
                     heap[childToSwap] = tmp;
-                }
-                else {
-
+                } else {
                     break;
                 }
 
                 index = childToSwap;
-            }
-            else {
-
+            } else {
                 break;
             }
         }
@@ -108,7 +94,6 @@ class Heap
     public void printHeap()
     {
         for (int i = 0; i < size; i++) {
-
             System.out.print(heap[i]);
             System.out.print(", ");
         }
