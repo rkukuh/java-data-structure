@@ -25,21 +25,15 @@ class BinarySearch
         int end = input.length;
 
         while (start < end) {
-
             int midpoint = (start + end) / 2;
 
             System.out.println("midpoint = " + midpoint);
 
             if (input[midpoint] == value) {
-
                 return midpoint;
-            }
-            else if (input[midpoint] < value) {
-
+            } else if (input[midpoint] < value) {
                 start = midpoint + 1;
-            }
-            else {
-
+            } else {
                 end = midpoint;
             }
         }
@@ -61,15 +55,10 @@ class BinarySearch
         System.out.println("midpoint = " + midpoint);
 
         if (input[midpoint] == value) {
-
             return midpoint;
-        }
-        else if (input[midpoint] < value) {
-
+        } else if (input[midpoint] < value) {
             return recursiveBinarySearch(input, midpoint + 1, end, value);
-        }
-        else {
-
+        } else {
             return recursiveBinarySearch(input, start, midpoint, value);
         }
     }
