@@ -9,7 +9,6 @@ class QuickSort
         quickSort(numbers, 0, numbers.length);
 
         for (int number : numbers) {
-
             System.out.println(number);
         }
     }
@@ -21,7 +20,6 @@ class QuickSort
         int pivotIndex = partition(input, start, end);
 
         quickSort(input, start, pivotIndex);
-
         quickSort(input, pivotIndex + 1, end);
     }
 
@@ -36,18 +34,12 @@ class QuickSort
             //noinspection StatementWithEmptyBody
             while (i < j && input[--j] >= pivot);
 
-            if (i < j) {
-
-                input[i] = input[j];
-            }
+            if (i < j) input[i] = input[j];
 
             //noinspection StatementWithEmptyBody
             while (i < j && input[++i] <= pivot);
 
-            if (i < j) {
-
-                input[j] = input[i];
-            }
+            if (i < j) input[j] = input[i];
         }
 
         input[j] = pivot;

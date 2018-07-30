@@ -8,12 +8,10 @@ class InsertionSort
 
         for (int firstUnsortedIndex = 1; firstUnsortedIndex < numbers.length; firstUnsortedIndex++) {
 
+            int i;
             int newElement = numbers[firstUnsortedIndex];
 
-            int i;
-
             for (i = firstUnsortedIndex; i > 0 && numbers[i - 1] > newElement; i--) {
-
                 numbers[i] = numbers[i - 1];
             }
 
@@ -21,7 +19,6 @@ class InsertionSort
         }
 
         for (int number : numbers) {
-
             System.out.println(number);
         }
     }

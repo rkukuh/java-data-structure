@@ -9,7 +9,6 @@ class MergeSort
         mergeSort(numbers, 0, numbers.length);
 
         for (int number : numbers) {
-
             System.out.println(number);
         }
     }
@@ -22,7 +21,6 @@ class MergeSort
 
         mergeSort(input, start, mid);
         mergeSort(input, mid, end);
-
         merge(input, start, mid, end);
     }
 
@@ -37,7 +35,6 @@ class MergeSort
         int[] temp = new int[end - start];
 
         while (i < mid && j < end) {
-
             temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
         }
 

@@ -15,7 +15,6 @@ class BasicArray
         numbers[6] = -22;
 
         for (int number : numbers) {
-
             System.out.println(number);
         }
     }

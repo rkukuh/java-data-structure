@@ -17,9 +17,7 @@ class BigOValue
         int index = -1;
 
         for (int i = 0; i < numbers.length; i++) {
-
             if (numbers[i] == 7) {
-
                 index = i;
                 break;
             }

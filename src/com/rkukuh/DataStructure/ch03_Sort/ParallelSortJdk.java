@@ -11,7 +11,6 @@ class ParallelSortJdk
         Arrays.parallelSort(numbers);
 
         for (int number : numbers) {
-
             System.out.println(number);
         }
     }

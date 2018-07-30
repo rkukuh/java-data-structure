@@ -9,7 +9,6 @@ class CountingSort
         countingSort(numbers, 1, 10);
 
         for (int number : numbers) {
-
             System.out.println(number);
         }
     }
@@ -20,18 +19,14 @@ class CountingSort
         int[] countArray = new int[(max - min) + 1];
 
         for (int anInput : input) {
-
             countArray[anInput - min]++;
         }
 
         int j = 0;
 
         for (int i = min; i <= max; i++) {
-
             while (countArray[i - min] > 0) {
-
                 input[j++] = i;
-
                 countArray[i - min]--;
             }
         }
